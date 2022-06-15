@@ -28,18 +28,24 @@ _global_script_classes=[ {
 "class": "RepositoryItem",
 "language": "GDScript",
 "path": "res://addons/github-integration/scripts/RepositoryItem.gd"
+}, {
+"base": "Resource",
+"class": "TilesetProperties",
+"language": "GDScript",
+"path": "res://addons/frontrider.tiledtools/loader/TilesetPropertyResource.gd"
 } ]
 _global_script_class_icons={
 "ContributorClass": "",
 "GistItem": "",
 "InvitationItem": "",
-"RepositoryItem": ""
+"RepositoryItem": "",
+"TilesetProperties": ""
 }
 
 [application]
 
 config/name="Fighting Joloso's"
-run/main_scene="res://joloso.tscn"
+run/main_scene="res://mapa1.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -51,7 +57,7 @@ RestHandler="*res://addons/github-integration/scenes/RestHandler.tscn"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/github-integration/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/github-integration/plugin.cfg", "res://addons/vnen.tiled_importer/plugin.cfg" )
 
 [input]
 
@@ -76,10 +82,25 @@ abajo={
  ]
 }
 
+[layer_names]
+
+2d_render/layer_1="paredes"
+2d_physics/layer_1="paredes"
+
 [physics]
 
 common/enable_pause_aware_picking=true
+2d/physics_engine="GodotPhysics"
 
 [rendering]
 
 environment/default_environment="res://default_env.tres"
+
+[tiled_importer]
+
+enable_json_format=true
+
+[tiled_tools]
+
+tileset_folder="res://assets/tileset_folder"
+tiled_path="tiled"

@@ -10,7 +10,7 @@ var screen_size
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	screen_size = get_viewport_rect().size
+#	screen_size = get_child()
 	pass # Replace with function body.
 
 
@@ -33,8 +33,8 @@ func _process(delta):
 		$AnimatedSprite.stop()
 		
 	position += velocity * delta
-	position.x = clamp(position.x, 0, screen_size.x)
-	position.y = clamp(position.y, 0, screen_size.y)
+#	position.x = clamp(position.x, 0, screen_size.x)
+#	position.y = clamp(position.y, 0, screen_size.y)
 	
 	if velocity.x != 0:
 		$AnimatedSprite.animation = "derecha"
@@ -44,4 +44,6 @@ func _process(delta):
 	elif velocity.y != 0:
 		$AnimatedSprite.animation = "arriba"
 		$AnimatedSprite.flip_v = velocity.y > 0
+		
+	
 	pass

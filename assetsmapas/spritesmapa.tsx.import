@@ -1,0 +1,19 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/spritesmapa.tsx-c1e15a3557454fb8af997d0eb108eaaa.res"
+
+[deps]
+
+source_file="res://assetsmapas/spritesmapa.tsx"
+dest_files=[ "res://.import/spritesmapa.tsx-c1e15a3557454fb8af997d0eb108eaaa.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+image_flags=7
+embed_internal_images=false
+save_tiled_properties=false
+post_import_script=""

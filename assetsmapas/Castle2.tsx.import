@@ -1,0 +1,19 @@
+[remap]
+
+importer="vnen.tiled_tileset_importer"
+type="TileSet"
+path="res://.import/Castle2.tsx-b2364c8b5d9e9bb3bbc32c7d684b4715.res"
+
+[deps]
+
+source_file="res://assetsmapas/Castle2.tsx"
+dest_files=[ "res://.import/Castle2.tsx-b2364c8b5d9e9bb3bbc32c7d684b4715.res" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=true
+image_flags=7
+embed_internal_images=false
+save_tiled_properties=false
+post_import_script=""
