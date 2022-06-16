@@ -45,7 +45,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Fighting Joloso's"
-run/main_scene="res://mapa1.tscn"
+run/main_scene="res://menus/login.tscn"
 config/icon="res://icon.png"
 
 [autoload]
@@ -58,6 +58,10 @@ RestHandler="*res://addons/github-integration/scenes/RestHandler.tscn"
 [editor_plugins]
 
 enabled=PoolStringArray( "res://addons/github-integration/plugin.cfg", "res://addons/vnen.tiled_importer/plugin.cfg" )
+
+[global]
+
+font=false
 
 [input]
 
